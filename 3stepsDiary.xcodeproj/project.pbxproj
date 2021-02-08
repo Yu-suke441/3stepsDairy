@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F45B64FDAEF2EF7C977D2D5 /* Pods_3stepsDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63820BB30563933ED1D94405 /* Pods_3stepsDiary.framework */; };
 		CB39CA1B25D0C16E00058373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39CA1A25D0C16E00058373 /* AppDelegate.swift */; };
 		CB39CA1D25D0C16E00058373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39CA1C25D0C16E00058373 /* SceneDelegate.swift */; };
 		CB39CA1F25D0C16E00058373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39CA1E25D0C16E00058373 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63820BB30563933ED1D94405 /* Pods_3stepsDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_3stepsDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7927FFBAD9E9308108B2BD52 /* Pods-3stepsDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3stepsDiary.release.xcconfig"; path = "Target Support Files/Pods-3stepsDiary/Pods-3stepsDiary.release.xcconfig"; sourceTree = "<group>"; };
+		98735AA9B29F7349EC173FE3 /* Pods-3stepsDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3stepsDiary.debug.xcconfig"; path = "Target Support Files/Pods-3stepsDiary/Pods-3stepsDiary.debug.xcconfig"; sourceTree = "<group>"; };
 		CB39CA1725D0C16E00058373 /* 3stepsDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3stepsDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB39CA1A25D0C16E00058373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB39CA1C25D0C16E00058373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F45B64FDAEF2EF7C977D2D5 /* Pods_3stepsDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151D29901B9656AEBF164CE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98735AA9B29F7349EC173FE3 /* Pods-3stepsDiary.debug.xcconfig */,
+				7927FFBAD9E9308108B2BD52 /* Pods-3stepsDiary.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		547FFCDB02B67296F3FE9978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63820BB30563933ED1D94405 /* Pods_3stepsDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB39CA0E25D0C16E00058373 = {
 			isa = PBXGroup;
 			children = (
 				CB39CA1925D0C16E00058373 /* 3stepsDiary */,
 				CB39CA1825D0C16E00058373 /* Products */,
+				151D29901B9656AEBF164CE0 /* Pods */,
+				547FFCDB02B67296F3FE9978 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB39CA2B25D0C16F00058373 /* Build configuration list for PBXNativeTarget "3stepsDiary" */;
 			buildPhases = (
+				A45B454B6E4734A297E81B21 /* [CP] Check Pods Manifest.lock */,
 				CB39CA1325D0C16E00058373 /* Sources */,
 				CB39CA1425D0C16E00058373 /* Frameworks */,
 				CB39CA1525D0C16E00058373 /* Resources */,
+				84178443B5F7AD9A170DBA4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84178443B5F7AD9A170DBA4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-3stepsDiary/Pods-3stepsDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-3stepsDiary/Pods-3stepsDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-3stepsDiary/Pods-3stepsDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45B454B6E4734A297E81B21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-3stepsDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB39CA1325D0C16E00058373 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		CB39CA2C25D0C16F00058373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98735AA9B29F7349EC173FE3 /* Pods-3stepsDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		CB39CA2D25D0C16F00058373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7927FFBAD9E9308108B2BD52 /* Pods-3stepsDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
